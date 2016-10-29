@@ -1,33 +1,55 @@
 <html>
+
 <head>
-    <title>Is Baby Wall Here?</title>
-<style media="screen" type="text/css">
+	<title>Is Baby Wall Here?</title>
+	<style media="screen" type="text/css">
+		html,
+		body {
+			height: 100%;
+		}
+		
+		.main {
+			height: 100%;
+			width: 100%;
+			display: table;
+		}
+		
+		.wrapper {
+			display: table-cell;
+			height: 100%;
+			vertical-align: middle;
+			font-size: 120pt;
+			text-align: center;
+			font-family: sans-serif;
+		}
+	</style>
 
-html, body {
-    height: 100%;
-}
-.main {
-    height: 100%;
-    width: 100%;
-    display: table;
-}
-.wrapper {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
-    font-size: 120pt;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-</style>
+	<script type="text/javascript">
+		function pickASaying() {
+            var sayings = [
+                "No, not yet",
+                "Still cooking",
+                "Bun's in the oven",
+                "No, plotting escape",
+                "No",
+                "Not yet",
+                "Still waiting",
+                "No, check later",
+                "Not out yet"
+            ];
+            var index = Math.floor(Math.random() * sayings.length);
+            var saying = sayings[index]; document.getElementById("textSpot").innerHTML = saying;
+        }
+	</script>
 
 </head>
-<body>
 
-<div class = "main"><div class = "wrapper">
-No, not yet!
-</div></div>
-
+<body onload=pickASaying()>
+	<div class="main">
+		<div class="wrapper" id="textSpot">
+			No, not yet!
+		</div>
+	</div>
 </body>
+
 </html>
