@@ -22,25 +22,16 @@
 			text-align: center;
 			font-family: sans-serif;
 		}
+		
+		.small {
+			font-size: 20pt;
+		}
 	</style>
 	<script type="text/javascript">
 		function pickASaying() {
+				return;
 			var sayings = [
-				"No, not yet",
-				"Still cooking",
-				"Bun's in the oven",
-				"No... plotting escape",
-				"No",
-				"Not yet",
-				"Still waiting",
-				"No, check later",
-				"Not out yet",
-				"No, going to extra innings",
-				"Baby has stage fright",
-				"High altitude, longer cook time",
-				"NBY (no baby yet)",
-				"No... can't find the exit",
-				"Baby waiting for Turkey Day?"
+				""
 			];
 			var index = Math.floor(Math.random() * sayings.length);
 			var saying = sayings[index];
@@ -49,10 +40,14 @@
 	</script>
 </head>
 
-<body onload=pickASaying()>
+<body>
 	<div class="main">
 		<div class="wrapper" id="textSpot">
-			No, not yet!
+			Coming soon... pray for all involved
+			<br>
+			<span class="small">
+				(updated 11/27 @ 8 AM)
+			</span>
 		</div>
 	</div>
 </body>
