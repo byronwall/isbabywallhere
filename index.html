@@ -7,49 +7,47 @@
 		body {
 			height: 100%;
 		}
-		
+
 		.main {
 			height: 100%;
 			width: 100%;
 			display: table;
 		}
-		
+
 		.wrapper {
 			display: table-cell;
 			height: 100%;
 			vertical-align: middle;
-			font-size: 80pt;
+			font-size: 120pt;
 			text-align: center;
 			font-family: sans-serif;
 		}
-		
-		.small {
-			font-size: 20pt;
-		}
 	</style>
+
 	<script type="text/javascript">
 		function pickASaying() {
-				return;
 			var sayings = [
-				""
+				"No, not yet",
+				"Still cooking",
+				"Bun's in the oven",
+				"No... plotting escape",
+				"No",
+				"Not yet",
+				"Still waiting",
+				"No, check later",
+				"Not out yet"
 			];
 			var index = Math.floor(Math.random() * sayings.length);
-			var saying = sayings[index];
-			document.getElementById("textSpot").innerHTML = saying;
+			var saying = sayings[index]; document.getElementById("textSpot").innerHTML = saying;
 		}
 	</script>
+
 </head>
 
-<body>
+<body onload=pickASaying()>
 	<div class="main">
 		<div class="wrapper" id="textSpot">
-			Violet Marie Wall
-			<br>
-			<span class="small">
-				8lb 6oz, 21in, born 11/28/16 @ 3:48 AM
-			</span>
-			<br>
-			<img height="500px" src="baby-wall.jpeg" />
+			No, not yet!
 		</div>
 	</div>
 </body>
